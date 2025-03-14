@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero{
+    margin-right: 50px;
+    width: 450px;
+    margin-left: 30px;
+    
+}
+.hero img{
+    width: 120px;
+    height: 75px;
+}
+
+
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .hero {
+        width: 100%; /* Full width */
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .cardsContainer {
+        width: 100%;
+        justify-content: center; /* Center cards */
+        margin-left: 0; /* Reset margin */
+    }
+}
