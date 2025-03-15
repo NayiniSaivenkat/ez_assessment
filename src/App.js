@@ -42,7 +42,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://3.228.97.110:9000/api", {
+      const response = await fetch("https://test.ezworks.ai/api", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
